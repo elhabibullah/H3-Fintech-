@@ -1,0 +1,8 @@
+{
+  "name": "H3 Fintech",
+  "description": "A modern, Halal-compliant neobank digital wallet featuring seamless transfers, Zakat calculation, and AI-powered support.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
