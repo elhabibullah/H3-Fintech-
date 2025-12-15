@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>H3 Fintech</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,6 +11,15 @@
         font-family: 'Inter', sans-serif;
         background-color: #000000; /* Pure Black for contrast */
         color: #f8fafc;
+        height: 100dvh;
+        width: 100vw;
+        overflow: hidden; /* Prevent body scroll, handle inside React */
+        margin: 0;
+        padding: 0;
+      }
+      #root {
+        height: 100%;
+        width: 100%;
       }
       /* Custom Scrollbar for sleek look */
       ::-webkit-scrollbar {

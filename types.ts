@@ -25,6 +25,24 @@ export interface UserProfile {
   biometricEnabled: boolean;
   balance: number;
   currency: string;
+  language: 'en' | 'ar';
+  profileImage?: string; // Base64 or URL
+  address?: string;
+  city?: string;
+  region?: string;
+  postcode?: string;
+  country?: string;
+}
+
+export interface VirtualCard {
+  id: string;
+  cardNumber: string;
+  expiry: string;
+  cvv: string;
+  holderName: string;
+  type: 'VISA' | 'MASTERCARD';
+  status: 'ACTIVE' | 'FROZEN';
+  color: 'SILVER' | 'BLACK' | 'GOLD';
 }
 
 export interface ChatMessage {
