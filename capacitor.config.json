@@ -1,0 +1,9 @@
+{
+  "appId": "com.H3.app",
+  "appName": "H3 Fintech",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}

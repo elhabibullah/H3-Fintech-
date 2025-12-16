@@ -568,8 +568,14 @@ const AuthScreen: React.FC = () => {
              <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-emerald-900/20 to-transparent pointer-events-none"></div>
              
              <div className="w-full max-w-sm relative z-10">
-                 <div className="text-center mb-12">
-                     <h1 className="text-6xl font-black italic text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-200 to-slate-500 tracking-tighter mb-4">H3</h1>
+                 <div className="text-center mb-12 flex flex-col items-center">
+                     <div className="w-40 h-40 mb-6">
+                        <img 
+                            src="https://fit-4rce-x.s3.eu-north-1.amazonaws.com/H3_logo.png" 
+                            alt="H3 Logo" 
+                            className="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+                        />
+                     </div>
                      <p className="text-slate-400 text-xs uppercase tracking-widest">Neobank of the Future</p>
                  </div>
 
