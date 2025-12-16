@@ -18,18 +18,34 @@ export interface Transaction {
 }
 
 export interface UserProfile {
-  name: string;
+  // Identity
+  title?: 'Mr' | 'Mrs';
+  firstName?: string;
+  lastName?: string;
+  name: string; // Display name (derived from First + Last)
+  
+  // Contact
   email: string;
   phoneNumber: string;
+  
+  // Status
   kycVerified: boolean;
   biometricEnabled: boolean;
+  
+  // Financial
   balance: number;
   currency: string;
+  bankName?: string;
+  iban?: string;
+  
+  // Settings
   language: 'en' | 'ar';
   profileImage?: string; // Base64 or URL
-  address?: string;
-  city?: string;
-  region?: string;
+  
+  // Address
+  address?: string; // Official address
+  city?: string;    // City / Municipality
+  region?: string;  // Province / Region
   postcode?: string;
   country?: string;
 }
